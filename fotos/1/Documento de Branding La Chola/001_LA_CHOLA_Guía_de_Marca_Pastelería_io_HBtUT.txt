@@ -1,0 +1,186 @@
+# LA CHOLA — Guía de Marca
+### Pastelería Alemana-Mapuche
+
+---
+
+## Identidad de Marca
+
+**La Chola** es una pastelería artesanal que fusiona la tradición panadera alemana con la herencia cultural mapuche, en el corazón de la Patagonia. La marca representa un puente entre dos mundos: la precisión y calidez de la repostería europea y la profundidad espiritual y terrena de la cultura mapuche.
+
+---
+
+## Paleta de Colores Principal
+
+La paleta fue extraída directamente del logotipo oficial, garantizando coherencia visual total entre todos los materiales de marca.
+
+### 🟤 Colores Primarios — La Tierra y la Artesanía
+
+| Color | HEX | RGB | Nombre de Marca |
+|---|---|---|---|
+| Oscuridad de Raíz | `#221106` | RGB(34, 17, 6) | **Negro Tierra** |
+| Rojo Arcilla | `#7B300F` | RGB(123, 48, 15) | **Arcilla Mapuche** |
+| Dorado Trigo | `#D38D29` | RGB(211, 141, 41) | **Oro Artesanal** |
+
+Estos tres colores constituyen el núcleo visual de la marca. Dominan el logotipo y deben tener protagonismo en toda comunicación principal.
+
+---
+
+### 🌿 Colores Secundarios — La Herencia Cultural
+
+| Color | HEX | RGB | Nombre de Marca |
+|---|---|---|---|
+| Verde Escudo | `#5E603F` | RGB(94, 96, 63) | **Verde Ngüllam** *(unión)* |
+| Gris Montaña | `#848781` | RGB(132, 135, 129) | **Gris Cordillera** |
+
+Colores que provienen del escudo bicultural (banderas alemana y mapuche) y el paisaje de fondo. Aportan profundidad y contexto geográfico-cultural.
+
+---
+
+### ✨ Colores de Acento — Calidez y Dulzura
+
+| Color | HEX | RGB | Nombre de Marca |
+|---|---|---|---|
+| Crema Vainilla | `#FAE795` | RGB(250, 231, 149) | **Vainilla Dulce** |
+| Beige Masa | `#B6AF98` | RGB(182, 175, 152) | **Masa Artesanal** |
+
+Acentos que evocan la repostería, los ingredientes naturales y la luminosidad del interior de una pastelería. Ideales para fondos y superficies secundarias.
+
+---
+
+### 🪨 Colores Neutros — Equilibrio y Elegancia
+
+| Color | HEX | RGB | Nombre de Marca |
+|---|---|---|---|
+| Piedra Suave | `#CFCEC5` | RGB(207, 206, 197) | **Piedra Patagónica** |
+| Blanco Harina | `#EEE9D8` | RGB(238, 233, 216) | **Blanco Harina** |
+| Blanco Puro | `#FFFFFF` | RGB(255, 255, 255) | **Blanco Limpio** |
+
+Base para fondos, textos sobre superficies oscuras y espacios de respiro visual.
+
+---
+
+## Psicología del Color
+
+### Marrones / Tierra Oscura (`#221106`, `#7B300F`)
+La **raíz** de la marca. El marrón oscuro casi negro evoca la tierra húmeda de la selva valdiviana, la madera trabajada con las manos, el barro cocido. El rojo arcilla conecta con el fogón mapuche, las tejas antiguas y la madera ahumada. Juntos transmiten **tradición inquebrantable, calidez doméstica y arraigo cultural**. En psicología del color, estos tonos generan confianza inmediata y una sensación de autenticidad imposible de fabricar.
+
+### Dorado / Ámbar (`#D38D29`)
+El color del **trigo maduro, la miel, la mantequilla dorada**. Este tono es la joya cromática de La Chola — el que eleva la marca de lo rústico a lo premium. El dorado artesanal no es el amarillo agresivo del fast food ni el amarillo pastel de lo infantil: es el color del pan recién horneado, de la avena tostada, del caramelo. Psicológicamente activa el apetito, evoca calidad y comunica abundancia generosa.
+
+### Verde (`#5E603F`)
+Un verde terroso, casi musgo, que no grita sino que **ancla**. Lejos del verde menta de las tendencias, este tono habla de naturaleza sin domesticar — los bosques de coigüe, las praderas húmedas, los cerros cubiertos de vegetación. Conecta directamente con la cosmovisión mapuche (*itrofill mongen* — la vida en todas sus formas) y da a la marca su dimensión ecológica y ancestral. Psicológicamente evoca autenticidad natural, frescura sin artificio y herencia viva.
+
+### Grises y Azulados (`#848781`, `#CFCEC5`)
+Los colores del **paisaje patagónico**: la piedra volcánica, el cielo nublado, el lago en invierno. Funcionan como reguladores visuales — enfrían la calidez excesiva de los marrones y dan sofisticación al conjunto. Psicológicamente aportan serenidad, solidez y confianza institucional. Son los colores del silencio productivo de una cocina profesional.
+
+### Cremas y Vainillas (`#FAE795`, `#B6AF98`, `#EEE9D8`)
+La **luz interior** de la marca. Estos tonos suaves evocan los ingredientes nobles de la pastelería: la harina tamizada, la mantequilla a temperatura ambiente, la vainilla en vaina. Son los colores del placer anticipado. Psicológicamente generan suavidad, accesibilidad y una invitación al cuidado. También permiten que los colores más intensos respiren y brillen.
+
+---
+
+## Uso Recomendado de Colores
+
+### Fondos Principales
+- **Primario:** `#EEE9D8` Blanco Harina — fondos de packaging, carta, web
+- **Secundario:** `#B6AF98` Masa Artesanal — fondos de secciones secundarias
+- **Oscuro:** `#221106` Negro Tierra — fondos de contraste fuerte (etiquetas premium)
+
+### Textos
+- **Sobre fondos claros:** `#221106` Negro Tierra *(nunca negro puro #000000)*
+- **Sobre fondos oscuros:** `#EEE9D8` Blanco Harina o `#FAE795` Vainilla Dulce
+- **Cuerpo general:** `#7B300F` Arcilla Mapuche para titulares decorativos
+
+### Acentos y Llamados a la Acción (CTAs)
+- **Principal:** `#D38D29` Oro Artesanal — botones, bordes decorativos, filetes
+- **Secundario:** `#5E603F` Verde Ngüllam — etiquetas de origen, sellos de calidad
+
+### Elementos Decorativos
+- `#5E603F` y `#848781` para ilustraciones, patrones geométricos mapuche, marcos
+- Usar con moderación — máximo 20% del área visual total
+
+---
+
+## Tipografía Recomendada
+
+La tipografía de La Chola debe reflejar la misma dualidad que el logotipo: elegancia artesanal europea con calidez sudamericana. **Nunca usar fuentes ultra-modernas, geométricas o sin personalidad.**
+
+### Títulos Principales — Script / Cursiva Elegante
+Fuentes sugeridas (similares al logotipo):
+- **Playfair Display SC** — Serif dramática con personalidad histórica
+- **Great Vibes** — Script fluida y elegante (similar al lettering del logo)
+- **Cormorant Garamond Italic** — Refinamiento europeo con carácter
+
+### Subtítulos — Serif Clásica
+- **Libre Baskerville** — Legible, clásica, con alma artesanal
+- **Lora** — Serif contemporánea con raíces literarias
+- **EB Garamond** — Historicidad y elegancia accesible
+
+### Cuerpo de Texto — Sans-Serif Cálida
+- **Nunito** — Redondeada, amigable, no fría
+- **Quattrocento Sans** — Limpia pero con personalidad
+- **Josefin Sans Light** — Moderna sin ser agresiva
+
+### ❌ Tipografías a EVITAR
+Futura, Helvetica pura, Gotham, Montserrat (genérico), Impact, cualquier fuente de estilo tecnológico o minimalista extremo. La marca no es una startup ni un banco — es una pastelería con alma.
+
+---
+
+## Tono y Voz de Marca
+
+**La Chola habla como una abuela que también es artista.**
+
+### Atributos de Voz
+- **Cálido pero no empalagoso** — como un abrazo, no como publicidad de televisión
+- **Orgulloso de sus raíces** — sin nostalgia melancólica, con identidad firme
+- **Artesanal y profesional** — el detalle importa, la calidad se nota, pero nunca se fanfarronea
+- **Fusión auténtica** — ni "muy alemán" ni "muy mapuche" — genuinamente La Chola
+
+### Tono en Diferentes Contextos
+- **Redes sociales:** Íntimo, descriptivo, evocador. *"Masa madre de tres días. El tiempo que necesita la tradición."*
+- **Packaging:** Breve y poético. *"Hecho con memoria y harina."*
+- **Carta/Menú:** Descriptivo y apetitoso, con referencias culturales precisas
+- **Comunicados formales:** Cálido pero profesional — nunca corporativo frío
+
+---
+
+## Aplicaciones de Marca
+
+### Packaging
+- Base de papel kraft natural o `#EEE9D8` (Blanco Harina)
+- Logo en dorado (`#D38D29`) — preferentemente impreso en hot stamping o foil
+- Tipografía en `#221106` (Negro Tierra)
+- Elementos decorativos en `#5E603F` (Verde Ngüllam) o `#7B300F` (Arcilla)
+- **Evitar:** fondos blancos puros, plástico transparente sin etiqueta
+
+### Redes Sociales
+- Fondos predominantes: `#EEE9D8`, `#FAE795`, `#B6AF98`
+- Fotografía de producto sobre superficies de madera, mármol crema o lino natural
+- Acentos dorados en marcos, separadores y tipografía de titulares
+- Consistencia de filtro: calidez +10, saturación +5, sin filtros artificiales o fríos
+
+### Señalética y Local
+- Madera natural con grabados o apliques dorados (`#D38D29`)
+- Pizarras para ofertas del día: fondo oscuro (`#221106`), texto en `#FAE795`
+- Uniformes: delantal lino natural con bordado en dorado o verde
+
+### Carta / Menú
+- Papel de gramaje 300g, color `#EEE9D8` o kraft
+- Títulos en Script dorada, cuerpo en Libre Baskerville
+- Separadores con motivos mapuche lineales en `#5E603F`
+- Precios en `#848781` (discretos pero legibles)
+
+### Sitio Web
+- Header: `#221106` con logo en `#D38D29`
+- Secciones alternando `#EEE9D8` y `#B6AF98`
+- CTAs (botones): `#D38D29` con texto `#221106`
+- Footer: `#221106` con texto `#FAE795`
+
+---
+
+## Síntesis Visual de Marca
+
+> *La Chola existe en el cruce entre el bosque y el horno, entre el kultrún y el strudel, entre la Patagonia y Baviera. Sus colores son tierra, oro y verde — los mismos de un atardecer sobre el lago Llanquihue. Su tipografía es la letra de quien aprendió el oficio de memoria. Su tono es el de quien sabe exactamente qué tiene entre manos.*
+
+---
+
+*Guía de Marca — La Chola Pastelería Alemana-Mapuche | Versión 1.0 | 2026*

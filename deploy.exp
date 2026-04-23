@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f
+set timeout -1
+spawn npx surge ./dist lacholapasteleriacl.surge.sh
+expect "email:"
+send "contacto2026@lachola.com\r"
+expect "password:"
+send "LaChola2026!\r"
+expect eof
