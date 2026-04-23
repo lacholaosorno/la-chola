@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <Link to="/" className="navbar-logo">
-          <img src="/assets/logo.png" alt="La Chola - Pastelería Mapuche Alemana" />
+          <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="La Chola - Pastelería Mapuche Alemana" />
         </Link>
 
         {/* Desktop Menu */}

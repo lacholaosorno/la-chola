@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const products = [
   {
     id: "frambuesa",
@@ -10,11 +12,11 @@ export const products = [
       { cantidad: 24, precio: 25000 }
     ],
     imagenes: [
-      "/assets/frambuesa/1.jpg",
-      "/assets/frambuesa/2.jpg",
-      "/assets/frambuesa/3.jpg",
-      "/assets/frambuesa/4.jpg",
-      "/assets/frambuesa/5.jpg"
+      `${base}assets/frambuesa/1.jpg`,
+      `${base}assets/frambuesa/2.jpg`,
+      `${base}assets/frambuesa/3.jpg`,
+      `${base}assets/frambuesa/4.jpg`,
+      `${base}assets/frambuesa/5.jpg`
     ]
   },
   {
@@ -28,11 +30,11 @@ export const products = [
       { cantidad: 24, precio: 25000 }
     ],
     imagenes: [
-      "/assets/arandanos/1.jpg",
-      "/assets/arandanos/2.jpg",
-      "/assets/arandanos/3.jpg",
-      "/assets/arandanos/4.jpg",
-      "/assets/arandanos/5.jpg"
+      `${base}assets/arandanos/1.jpg`,
+      `${base}assets/arandanos/2.jpg`,
+      `${base}assets/arandanos/3.jpg`,
+      `${base}assets/arandanos/4.jpg`,
+      `${base}assets/arandanos/5.jpg`
     ]
   },
   {
@@ -46,11 +48,11 @@ export const products = [
       { cantidad: 24, precio: 25000 }
     ],
     imagenes: [
-      "/assets/durazno/1.png",
-      "/assets/durazno/2.png",
-      "/assets/durazno/3.jpg",
-      "/assets/durazno/4.jpg",
-      "/assets/durazno/5.jpg"
+      `${base}assets/durazno/1.png`,
+      `${base}assets/durazno/2.png`,
+      `${base}assets/durazno/3.jpg`,
+      `${base}assets/durazno/4.jpg`,
+      `${base}assets/durazno/5.jpg`
     ]
   }
 ];
@@ -62,10 +64,10 @@ export const sizes = [
 ];
 
 export const heroImages = [
-  "/assets/hero1.jpg",
-  "/assets/hero2.jpg",
-  "/assets/hero3.jpg",
-  "/assets/hero4.jpg"
+  `${base}assets/hero1.jpg`,
+  `${base}assets/hero2.jpg`,
+  `${base}assets/hero3.jpg`,
+  `${base}assets/hero4.jpg`
 ];
 
 export const WHATSAPP_NUMBER = "56989584196";
