@@ -12,11 +12,11 @@ export const products = [
       { cantidad: 24, precio: 25000 }
     ],
     imagenes: [
-      `${base}assets/frambuesa/1.jpg`,
-      `${base}assets/frambuesa/2.jpg`,
-      `${base}assets/frambuesa/3.jpg`,
-      `${base}assets/frambuesa/4.jpg`,
-      `${base}assets/frambuesa/5.jpg`
+      `${base}assets/frambuesa/1.png`,
+      `${base}assets/frambuesa/2.png`,
+      `${base}assets/frambuesa/3.png`,
+      `${base}assets/frambuesa/4.png`,
+      `${base}assets/frambuesa/5.png`
     ]
   },
   {
@@ -30,11 +30,11 @@ export const products = [
       { cantidad: 24, precio: 25000 }
     ],
     imagenes: [
-      `${base}assets/arandanos/1.jpg`,
-      `${base}assets/arandanos/2.jpg`,
-      `${base}assets/arandanos/3.jpg`,
-      `${base}assets/arandanos/4.jpg`,
-      `${base}assets/arandanos/5.jpg`
+      `${base}assets/arandanos/1.png`,
+      `${base}assets/arandanos/2.png`,
+      `${base}assets/arandanos/3.png`,
+      `${base}assets/arandanos/4.png`,
+      `${base}assets/arandanos/5.png`
     ]
   },
   {
@@ -50,9 +50,9 @@ export const products = [
     imagenes: [
       `${base}assets/durazno/1.png`,
       `${base}assets/durazno/2.png`,
-      `${base}assets/durazno/3.jpg`,
-      `${base}assets/durazno/4.jpg`,
-      `${base}assets/durazno/5.jpg`
+      `${base}assets/durazno/3.png`,
+      `${base}assets/durazno/4.png`,
+      `${base}assets/durazno/5.png`
     ]
   }
 ];

@@ -12,6 +12,10 @@ const SizesAndPrices = () => {
 
   return (
     <section className="precios section-padding">
+      {/* Fondo decorativo */}
+      <div className="precios-bg">
+        <img src={`${import.meta.env.BASE_URL}assets/hero1.jpg`} alt="" />
+      </div>
       <div className="container">
         {/* Título */}
         <div className="text-center">

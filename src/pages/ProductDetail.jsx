@@ -40,13 +40,46 @@ const ProductDetail = () => {
     }).format(price);
   };
 
+  const [selectedPorcion, setSelectedPorcion] = useState(null);
+  const [showConfirm, setShowConfirm] = useState(false);
+
   const handleWhatsApp = () => {
-    const text = `Hola! Me gustaría encargar un ${product.nombre} 🎂`;
+    if (!selectedPorcion) return;
+    const text = `¡Hola! Me gustaría encargar un ${product.nombre} de ${selectedPorcion.cantidad} porciones. Precio: ${formatPrice(selectedPorcion.precio)}. ¿Tienen disponibilidad? 🎂`;
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+    setShowConfirm(false);
+  };
+
+  const openConfirm = (porcion) => {
+    setSelectedPorcion(porcion);
+    setShowConfirm(true);
   };
 
   return (
     <div className="product-detail-page">
+      {/* Modal de Confirmación */}
+      {showConfirm && (
+        <div className="modal-overlay">
+          <div className="modal-content animate-fade">
+            <button className="modal-close" onClick={() => setShowConfirm(false)}>×</button>
+            <h3 className="modal-title">Confirmar Pedido</h3>
+            <div className="modal-details">
+              <p>Has seleccionado:</p>
+              <div className="selected-item">
+                <strong>{product.nombre}</strong>
+                <span>{selectedPorcion.cantidad} porciones</span>
+                <span className="selected-price">{formatPrice(selectedPorcion.precio)}</span>
+              </div>
+            </div>
+            <p className="modal-note">Al confirmar, serás redirigido a WhatsApp para finalizar tu pedido.</p>
+            <button className="btn-whatsapp w-full" onClick={handleWhatsApp}>
+              <WhatsAppIcon size={22} />
+              Confirmar y Enviar
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Hero con imagen de fondo */}
       <section className="product-hero">
         <div className="product-hero-bg">
@@ -63,7 +96,7 @@ const ProductDetail = () => {
 
         <div className="container product-hero-content">
           <div className="product-hero-text animate-slide">
-            <a href="/#kuchenes" className="detail-back-link">← Volver a Kuchenes</a>
+            <Link to="/#kuchenes" className="detail-back-link">← Volver a Kuchenes</Link>
             <h1 className="hero-title">{product.nombre}</h1>
             <p className="product-hero-price">Desde {formatPrice(product.precio_base)}</p>
           </div>
@@ -106,20 +139,25 @@ const ProductDetail = () => {
               </p>
               <p className="detail-desc">{product.descripcion}</p>
 
-              {/* Tabla de precios */}
+              {/* Tabla de precios interactiva */}
               <div className="detail-price-table">
+                <p className="table-instruction">Selecciona un tamaño para encargar:</p>
                 {product.porciones.map((porcion, index) => (
-                  <div key={index} className="price-row">
+                  <div 
+                    key={index} 
+                    className="price-row clickable" 
+                    onClick={() => openConfirm(porcion)}
+                  >
                     <span className="price-row-label">{porcion.cantidad} porciones</span>
                     <span className="price-row-value">{formatPrice(porcion.precio)}</span>
+                    <span className="price-row-action">Encargar →</span>
                   </div>
                 ))}
               </div>
 
-              <button className="btn-whatsapp" onClick={handleWhatsApp}>
-                <WhatsAppIcon size={22} />
-                Encargar por WhatsApp
-              </button>
+              <div className="detail-info-footer">
+                <p>Hecho a mano con ingredientes naturales.</p>
+              </div>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const Contact = () => {
           {/* Columna 1: Logo y descripción */}
           <div className="footer-col">
             <div className="footer-logo">
-              <img src="/assets/logo.png" alt="La Chola - Pastelería Mapuche Alemana" />
+              <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="La Chola - Pastelería Mapuche Alemana" />
             </div>
             <p className="footer-desc">
               Kuchenes artesanales hechos con tradición mapuche y alemana en el corazón del sur de Chile.
