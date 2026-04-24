@@ -54,6 +54,42 @@ export const products = [
       `${base}assets/durazno/4.png`,
       `${base}assets/durazno/5.png`
     ]
+  },
+  {
+    id: "manzana",
+    nombre: "Kuchen de Manzana",
+    precio_base: 14900,
+    descripcion: "Clásico kuchen con manzanas laminadas, canela y una suave crema, cubierto con crumble.",
+    porciones: [
+      { cantidad: 12, precio: 14900 },
+      { cantidad: 18, precio: 18900 },
+      { cantidad: 24, precio: 25000 }
+    ],
+    imagenes: [
+      `${base}assets/manzana/1.png`,
+      `${base}assets/manzana/2.png`,
+      `${base}assets/manzana/3.png`,
+      `${base}assets/manzana/4.png`,
+      `${base}assets/manzana/5.jpg`
+    ]
+  },
+  {
+    id: "nuez",
+    nombre: "Kuchen de Nuez",
+    precio_base: 15900,
+    descripcion: "Exquisito kuchen con una base crujiente y un relleno denso y dulce de nueces seleccionadas.",
+    porciones: [
+      { cantidad: 12, precio: 15900 },
+      { cantidad: 18, precio: 19900 },
+      { cantidad: 24, precio: 26000 }
+    ],
+    imagenes: [
+      `${base}assets/nuez/1.png`,
+      `${base}assets/nuez/2.png`,
+      `${base}assets/nuez/3.png`,
+      `${base}assets/nuez/4.png`,
+      `${base}assets/nuez/5.png`
+    ]
   }
 ];
 
