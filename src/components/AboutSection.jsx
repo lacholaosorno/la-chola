@@ -1,33 +1,24 @@
-import React from 'react';
-import { WHATSAPP_URL } from '../data/products';
+import React, { useState, useEffect } from 'react';
+import { WHATSAPP_URL, heroImages } from '../data/products';
 
 const AboutSection = () => {
+  const [bgIndex, setBgIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBgIndex((prev) => (prev + 1) % heroImages.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="nosotros" className="cta-section section-padding">
       <div className="container">
-        <div className="cta-inner">
-          {/* Texto */}
-          <div className="cta-content">
-            <h2 className="cta-title">Hecho con tradición</h2>
-            <p className="cta-text">
-              Cada kuchen nace de recetas tradicionales y manos que respetan el tiempo y los
-              ingredientes. Pastelería Mapuche Alemana hecha con amor.
-            </p>
-          </div>
-
-          {/* CTA WhatsApp */}
-          <div className="cta-right">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-whatsapp"
-            >
-              <WhatsAppIcon size={22} />
-              Encargar por WhatsApp
-            </a>
-            <p className="cta-helper-text">Haz tu pedido de forma fácil y rápida</p>
-          </div>
+        <div className="cta-inner animate-slide">
+          <h2 className="cta-title">Hecho con tradición</h2>
+          <p className="cta-text">
+            Cada kuchen nace de recetas tradicionales y manos que respetan el tiempo y los ingredientes. Pastelería Mapuche Alemana hecha con amor, llevando los mejores sabores directamente a tu mesa para compartir momentos inolvidables.
+          </p>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Cake } from 'lucide-react';
 import { sizes } from '../data/products';
 
 const SizesAndPrices = () => {
@@ -33,7 +34,9 @@ const SizesAndPrices = () => {
               className="precio-card animate-slide"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="precio-card-icon">🎂</div>
+              <div className="precio-card-icon">
+                <Cake size={48} strokeWidth={1.5} color="var(--dorado)" />
+              </div>
               <h3 className="precio-card-personas">{size.personas} Personas</h3>
               <p className="precio-card-diametro">Diámetro aprox. {size.diametro}</p>
               <p className="precio-card-valor">{formatPrice(size.precio)}</p>

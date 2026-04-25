@@ -32,7 +32,7 @@ const Hero = () => {
         <h1 className="hero-title animate-fade">
           Kuchenes artesanales<br />con alma del sur
         </h1>
-        <a href="#kuchenes" className="hero-btn animate-slide" style={{ animationDelay: '0.2s' }}>
+        <a href="#kuchenes" className="hero-btn animate-slide">
           Ver Kuchenes
         </a>
       </div>

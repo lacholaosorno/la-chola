@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { products, WHATSAPP_NUMBER } from '../data/products';
+import { products } from '../data/products';
+import { useCart } from '../context/CartContext';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -42,12 +43,19 @@ const ProductDetail = () => {
 
   const [selectedPorcion, setSelectedPorcion] = useState(null);
   const [showConfirm, setShowConfirm] = useState(false);
+  const { addToCart, setIsCartOpen } = useCart();
 
-  const handleWhatsApp = () => {
+  const handleAddToCart = () => {
     if (!selectedPorcion) return;
-    const text = `¡Hola! Me gustaría encargar un ${product.nombre} de ${selectedPorcion.cantidad} porciones. Precio: ${formatPrice(selectedPorcion.precio)}. ¿Tienen disponibilidad? 🎂`;
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+    addToCart(product, selectedPorcion, 1);
     setShowConfirm(false);
+  };
+
+  const handleBuyNow = () => {
+    if (!selectedPorcion) return;
+    addToCart(product, selectedPorcion, 1);
+    setShowConfirm(false);
+    setIsCartOpen(true);
   };
 
   const openConfirm = (porcion) => {
@@ -71,32 +79,37 @@ const ProductDetail = () => {
                 <span className="selected-price">{formatPrice(selectedPorcion.precio)}</span>
               </div>
             </div>
-            <p className="modal-note">Al confirmar, serás redirigido a WhatsApp para finalizar tu pedido.</p>
-            <button className="btn-whatsapp w-full" onClick={handleWhatsApp}>
-              <WhatsAppIcon size={22} />
-              Confirmar y Enviar
-            </button>
+            <p className="modal-note">Elige qué deseas hacer con tu producto:</p>
+            <div className="modal-actions">
+              <button className="btn-whatsapp" onClick={handleBuyNow} style={{ width: '100%' }}>
+                <WhatsAppIcon size={22} />
+                Confirmar y comprar
+              </button>
+              <button className="btn-minimal" onClick={handleAddToCart} style={{ border: '1px solid var(--dorado)', width: '100%', textDecoration: 'none' }}>
+                Agregar al carrito
+              </button>
+              <button className="btn-minimal" onClick={() => setShowConfirm(false)}>
+                Seguir viendo
+              </button>
+            </div>
           </div>
         </div>
       )}
 
-      {/* Hero con imagen de fondo */}
+      {/* Hero */}
       <section className="product-hero">
         <div className="product-hero-bg">
-          {product.imagenes.map((img, idx) => (
-            <img 
-              key={idx} 
-              src={img} 
-              alt={product.nombre} 
-              className={`product-slider-img ${idx === currentImgIndex ? 'active' : ''}`}
-            />
-          ))}
+          <img 
+            src={product.imagenes[0]} 
+            alt={product.nombre} 
+            style={{ filter: 'blur(20px) brightness(0.4)', scale: '1.1' }}
+          />
           <div className="product-hero-overlay"></div>
         </div>
 
         <div className="container product-hero-content">
           <div className="product-hero-text animate-slide">
-            <Link to="/#kuchenes" className="detail-back-link">← Volver a Kuchenes</Link>
+            <Link to="/" className="detail-back-link">← Volver al inicio</Link>
             <h1 className="hero-title">{product.nombre}</h1>
             <p className="product-hero-price">Desde {formatPrice(product.precio_base)}</p>
           </div>
@@ -120,16 +133,11 @@ const ProductDetail = () => {
         <div className="container">
           <div className="detail-split">
             <div className="detail-image-col animate-slide">
-              <div className="slider-container detail-img-square">
-                {product.imagenes.map((img, idx) => (
-                  <img 
-                    key={idx} 
-                    src={img} 
-                    alt={product.nombre} 
-                    className={`product-slider-img ${idx === currentImgIndex ? 'active' : ''}`}
-                  />
-                ))}
-              </div>
+              <img 
+                src={product.imagenes[0]} 
+                alt={product.nombre} 
+                className="detail-img-square"
+              />
             </div>
             <div className="detail-text-col animate-slide" style={{ animationDelay: '0.2s' }}>
               <h2 className="detail-title">{product.nombre}</h2>

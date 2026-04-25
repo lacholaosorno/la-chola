@@ -29,10 +29,10 @@ const Contact = () => {
           <div className="footer-col">
             <h4>Enlaces</h4>
             <div className="footer-links">
-              <a href="/">Inicio</a>
-              <a href="#kuchenes">Kuchenes</a>
-              <a href="#nosotros">Nosotros</a>
-              <a href="#contacto">Contacto</a>
+              <a href={import.meta.env.BASE_URL}>Inicio</a>
+              <a href={`${import.meta.env.BASE_URL}#kuchenes`}>Kuchenes</a>
+              <a href={`${import.meta.env.BASE_URL}#nosotros`}>Nosotros</a>
+              <a href={`${import.meta.env.BASE_URL}#contacto`}>Contacto</a>
             </div>
           </div>
 
@@ -45,11 +45,11 @@ const Contact = () => {
             </div>
             <div className="footer-contact-item">
               <i className="fa-solid fa-envelope"></i>
-              <span>hola@lachola.cl</span>
+              <span>lachola.osorno@gmail.com</span>
             </div>
             <div className="footer-contact-item">
               <i className="fa-solid fa-location-dot"></i>
-              <span>Temuco, Chile</span>
+              <span>Osorno, Chile</span>
             </div>
           </div>
 

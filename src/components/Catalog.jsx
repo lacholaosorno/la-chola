@@ -61,21 +61,14 @@ const Catalog = () => {
             >
               <CatalogCardImage product={product} />
               <div className="product-card-body">
-                <h3 className="product-card-name">{product.nombre}</h3>
+                <h3 className="product-card-name">
+                  Kuchen de {product.nombre.split('de ')[1].toLowerCase()}
+                </h3>
                 <p className="product-card-desc">{product.descripcion}</p>
-                <span className="product-card-price">
-                  Desde {formatPrice(product.precio_base)}
-                </span>
+                <span className="product-card-price">Desde {formatPrice(product.precio_base)}</span>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Botón "Ver todos" */}
-        <div className="catalogo-btn-wrapper animate-slide" style={{ animationDelay: '0.4s' }}>
-          <a href="#kuchenes" className="btn-ver-todos">
-            Ver todos los kuchenes
-          </a>
         </div>
       </div>
     </section>

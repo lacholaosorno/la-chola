@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ShoppingCart } from 'lucide-react';
 import { WHATSAPP_URL } from '../data/products';
+import { useCart } from '../context/CartContext';
+import CartSidebar from './CartSidebar';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { cartCount, isCartOpen, setIsCartOpen } = useCart();
 
   useEffect(() => {
     let ticking = false;
@@ -22,11 +25,12 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const base = import.meta.env.BASE_URL;
   const navLinks = [
-    { name: 'Inicio', href: '/' },
-    { name: 'Kuchenes', href: '/#kuchenes' },
-    { name: 'Nosotros', href: '/#nosotros' },
-    { name: 'Contacto', href: '/#contacto' }
+    { name: 'Inicio', href: base },
+    { name: 'Kuchenes', href: `${base}#kuchenes` },
+    { name: 'Nosotros', href: `${base}#nosotros` },
+    { name: 'Contacto', href: `${base}#contacto` }
   ];
 
   const closeMobile = () => setIsMobileMenuOpen(false);
@@ -48,16 +52,23 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* WhatsApp Button - Desktop */}
-        <a
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="navbar-wsp"
-        >
-          <WhatsAppIcon size={16} />
-          Encargar por WhatsApp
-        </a>
+        {/* Actions - Desktop */}
+        <div className="navbar-actions">
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navbar-wsp"
+          >
+            <WhatsAppIcon size={26} />
+            Encargar por WhatsApp
+          </a>
+
+          <button className="cart-toggle" onClick={() => setIsCartOpen(true)}>
+            <ShoppingCart size={24} />
+            {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+          </button>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -88,6 +99,9 @@ const Navbar = () => {
           </a>
         </div>
       )}
+
+      {/* Cart Sidebar */}
+      <CartSidebar isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
     </nav>
   );
 };
