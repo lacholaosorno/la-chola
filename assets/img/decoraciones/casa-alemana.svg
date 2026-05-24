@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Casa estilo aleman</title>
+  <desc id="desc">Casa pastelera inspirada en arquitectura alemana con jardin.</desc>
+  <rect width="760" height="560" rx="40" fill="#fffdfb"/>
+  <path d="M83 391h594v78H83z" fill="#e7c6a5" opacity=".38"/>
+  <path d="M172 248h416v209H172z" fill="#fff6ef" stroke="#9e1b32" stroke-width="8"/>
+  <path d="M130 255 380 83l250 172H130Z" fill="#9e1b32"/>
+  <path d="M184 259h392" stroke="#e7c6a5" stroke-width="12"/>
+  <path d="M234 286h82v74h-82zM444 286h82v74h-82z" fill="#d96b75" opacity=".72"/>
+  <path d="M346 337h68v120h-68z" fill="#6b3f33"/>
+  <path d="M201 247v209M559 247v209M290 172v284M470 172v284" stroke="#6b3f33" stroke-width="14" stroke-linecap="round"/>
+  <path d="M210 416c-43 0-78 25-78 56h156c0-31-35-56-78-56ZM598 421c-37 0-68 22-68 50h136c0-28-31-50-68-50Z" fill="#5e7d61"/>
+  <circle cx="132" cy="411" r="20" fill="#d96b75"/>
+  <circle cx="653" cy="421" r="17" fill="#d96b75"/>
+</svg>

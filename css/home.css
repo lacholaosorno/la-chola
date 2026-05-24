@@ -1,0 +1,288 @@
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    align-items: center;
+    gap: 34px;
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 98px;
+    overflow: visible;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 112px;
+    background: var(--background);
+    clip-path: ellipse(58% 54% at 50% 100%);
+    pointer-events: none;
+}
+
+.hero-copy,
+.hero-art {
+    position: relative;
+    z-index: 1;
+}
+
+.artisan-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    margin: 0 0 24px;
+    padding: 8px 14px;
+    border: 1px solid rgba(176, 20, 42, 0.18);
+    border-radius: 12px;
+    background: rgba(255, 253, 249, 0.88);
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 900;
+    box-shadow: 0 9px 22px rgba(71, 31, 24, 0.08);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.artisan-badge::before {
+    content: "♡";
+    width: auto;
+    height: auto;
+    color: var(--accent);
+    background: transparent;
+    font-size: 0.95rem;
+}
+
+.hero h1 { max-width: 600px; }
+.hero .script-kicker { margin-top: 10px; }
+
+.hero h1 span {
+    color: var(--accent);
+    font-style: normal;
+}
+
+.hero-text {
+    max-width: 470px;
+    margin: 24px 0 28px;
+    color: var(--text-soft);
+    font-size: 1.02rem;
+    line-height: 1.75;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.hero-art {
+    min-height: 590px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0 0 0 120px;
+    box-shadow: none;
+}
+
+.hero-art img {
+    width: 100%;
+    height: 100%;
+    min-height: 590px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.botanical {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    width: 150px;
+    height: 320px;
+    opacity: 0.36;
+    background:
+        linear-gradient(28deg, transparent 49%, rgba(201, 137, 104, 0.82) 49% 51%, transparent 51%),
+        radial-gradient(ellipse at 24% 18%, transparent 42%, rgba(201, 137, 104, 0.82) 43% 45%, transparent 46%),
+        radial-gradient(ellipse at 76% 34%, transparent 42%, rgba(201, 137, 104, 0.82) 43% 45%, transparent 46%),
+        radial-gradient(ellipse at 22% 54%, transparent 42%, rgba(201, 137, 104, 0.82) 43% 45%, transparent 46%);
+    background-repeat: no-repeat;
+}
+
+.botanical-left { top: 190px; left: 0; }
+.botanical-right { top: 154px; right: 8px; transform: scaleX(-1); }
+
+.scroll-cue {
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    z-index: 2;
+    display: grid;
+    justify-items: center;
+    gap: 9px;
+    color: var(--accent);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+}
+
+.scroll-cue span {
+    display: block;
+    width: 20px;
+    height: 34px;
+    border: 2px solid var(--accent);
+    border-radius: 999px;
+}
+
+.featured-section {
+    position: relative;
+    padding-top: 48px;
+    background:
+        linear-gradient(180deg, rgba(255, 241, 242, 0.44), rgba(255, 249, 240, 0.78));
+}
+
+.berry-deco {
+    position: absolute;
+    z-index: 0;
+    width: 142px;
+    pointer-events: none;
+    opacity: 0.44;
+}
+
+.berry-left { top: -14px; left: 0; }
+.berry-right { top: 42px; right: 0; }
+
+.product-slider {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.center-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+.center-action .btn {
+    border-color: var(--accent);
+    background: transparent;
+    color: var(--primary);
+}
+
+.center-action .btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 46px;
+    background:
+        linear-gradient(90deg, rgba(176, 20, 42, 0.04), transparent),
+        var(--background);
+}
+
+.about-image {
+    overflow: hidden;
+    border: 1px solid rgba(176, 20, 42, 0.12);
+    border-radius: 72px 22px 72px 22px;
+    box-shadow: var(--shadow-soft);
+}
+
+.about-image img {
+    width: 100%;
+    aspect-ratio: 1.18;
+    object-fit: cover;
+}
+
+.about-copy p {
+    max-width: 620px;
+    line-height: 1.78;
+}
+
+.about-icons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.about-icons span {
+    display: grid;
+    gap: 8px;
+    min-height: 76px;
+    place-items: center;
+    padding: 16px 12px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-card);
+    background: linear-gradient(180deg, #FFFDF8, #FFF1F2);
+    color: var(--primary-dark);
+    font-weight: 800;
+    text-align: center;
+}
+
+.about-icons strong {
+    color: var(--accent);
+    font-size: 1.9rem;
+    line-height: 1;
+}
+
+.testimonials {
+    padding-top: 58px;
+    padding-bottom: 54px;
+    background:
+        linear-gradient(180deg, rgba(247, 239, 227, 0.68), rgba(255, 253, 248, 0.8));
+    background-size: 100% 100%;
+}
+
+.testimonial-track {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.testimonial {
+    display: grid;
+    gap: 12px;
+    min-height: 214px;
+    padding: 26px 24px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-card);
+    background: rgba(255, 253, 248, 0.92);
+    box-shadow: var(--shadow-soft);
+    text-align: left;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.testimonial::before {
+    content: "\201C";
+    height: 26px;
+    color: var(--accent);
+    font-family: Georgia, serif;
+    font-size: 3.1rem;
+    line-height: 1;
+}
+
+.testimonial p {
+    margin: 0 0 8px;
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.stars {
+    margin: 4px 0 0;
+    color: #D69A2D;
+    font-size: 0.84rem;
+    letter-spacing: 2px;
+}

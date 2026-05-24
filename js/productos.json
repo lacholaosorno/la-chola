@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "nombre": "Red Velvet Roll",
+        "categoria": "Clásicos",
+        "precio_base": 16000,
+        "imagen": "assets/img/productos/red-velvet.jpg",
+        "descripcion": "Bizcocho aterciopelado con crema de queso premium."
+    },
+    {
+        "id": 2,
+        "nombre": "Wild Berry Studio",
+        "categoria": "Temporada",
+        "precio_base": 20000,
+        "imagen": "assets/img/productos/berries.jpg",
+        "descripcion": "Explosión de frutos del bosque y chocolate blanco."
+    }
+]

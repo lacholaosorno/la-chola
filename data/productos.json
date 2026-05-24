@@ -1,0 +1,98 @@
+[
+    {
+        "id": "berries-cream",
+        "name": "Kuchen de Frambuesa",
+        "category": "Frutal",
+        "featured": true,
+        "shortDescription": "Suave masa con frambuesas naturales y crumble.",
+        "description": "Kuchen artesanal de masa suave con frambuesas naturales, notas mantequillosas y crumble dorado.",
+        "ingredients": ["Vainilla", "Crema", "Frutilla", "Arandano", "Frambuesa"],
+        "image": "assets/img/home/kuchen-frambuesa.png",
+        "sizes": [
+            { "people": 8, "price": 28000 },
+            { "people": 12, "price": 34000 },
+            { "people": 16, "price": 40000 },
+            { "people": 20, "price": 48000 }
+        ]
+    },
+    {
+        "id": "chocolate-avellana",
+        "name": "Rollo de Manjar",
+        "category": "Clasicos",
+        "featured": true,
+        "shortDescription": "Rollo suave relleno de manjar artesanal.",
+        "description": "Rollo tradicional de bizcocho flexible con manjar artesanal y terminacion delicada de azucar flor.",
+        "ingredients": ["Manjar", "Vainilla", "Crema", "Azucar flor", "Huevos"],
+        "image": "assets/img/home/rollo-manjar.png",
+        "sizes": [
+            { "people": 8, "price": 24000 },
+            { "people": 12, "price": 30000 },
+            { "people": 16, "price": 36000 },
+            { "people": 20, "price": 42000 }
+        ]
+    },
+    {
+        "id": "limon-merengue",
+        "name": "Torta Selva Negra",
+        "category": "Chocolate",
+        "featured": true,
+        "shortDescription": "Clasico aleman con cerezas, chocolate y crema.",
+        "description": "Torta de chocolate con crema, cerezas y una terminacion intensa inspirada en la tradicion alemana.",
+        "ingredients": ["Chocolate", "Cerezas", "Crema", "Cacao", "Vainilla"],
+        "image": "assets/img/home/selva-negra.png",
+        "sizes": [
+            { "people": 8, "price": 30000 },
+            { "people": 12, "price": 38000 },
+            { "people": 16, "price": 46000 },
+            { "people": 20, "price": 54000 }
+        ]
+    },
+    {
+        "id": "dulce-nuez",
+        "name": "Cheesecake de Arandanos",
+        "category": "Frutal",
+        "featured": true,
+        "shortDescription": "Cremoso cheesecake con salsa de arandanos.",
+        "description": "Cheesecake cremoso con base crocante y salsa brillante de arandanos naturales.",
+        "ingredients": ["Queso crema", "Arandanos", "Galleta", "Vainilla", "Crema"],
+        "image": "assets/img/home/cheesecake-arandanos.png",
+        "sizes": [
+            { "people": 8, "price": 26000 },
+            { "people": 12, "price": 32000 },
+            { "people": 16, "price": 39000 },
+            { "people": 20, "price": 46000 }
+        ]
+    },
+    {
+        "id": "pistacho-frambuesa",
+        "name": "Galletas Artesanales",
+        "category": "Galletas",
+        "featured": true,
+        "shortDescription": "Variedad de galletas hechas con ingredientes naturales.",
+        "description": "Surtido de galletas artesanales con recetas caseras, textura delicada y decoracion cuidada.",
+        "ingredients": ["Mantequilla", "Vainilla", "Chocolate", "Harina", "Azucar"],
+        "image": "assets/img/home/galletas-artesanales.png",
+        "sizes": [
+            { "people": 8, "price": 26000 },
+            { "people": 12, "price": 32000 },
+            { "people": 16, "price": 39000 },
+            { "people": 20, "price": 46000 }
+        ]
+    },
+    {
+        "id": "mango-maracuya",
+        "name": "Mango Maracuya",
+        "category": "Frutal",
+        "featured": false,
+        "shortDescription": "Mango, maracuya y crema fresca.",
+        "description": "Una opcion tropical, luminosa y cremosa con pulpa de mango, acidez de maracuya y decoracion frutal.",
+        "ingredients": ["Mango", "Maracuya", "Crema", "Vainilla", "Coco"],
+        "image": "assets/img/productos/mango-maracuya.svg",
+        "sizes": [
+            { "people": 8, "price": 16000 },
+            { "people": 12, "price": 20000 },
+            { "people": 16, "price": 24000 },
+            { "people": 20, "price": 30000 }
+        ]
+    }
+]

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Roll cake artesanal decorado</title>
+  <desc id="desc">Torta enrollada con crema, frutillas y decoracion pastel.</desc>
+  <rect width="900" height="700" fill="#fff6ef"/>
+  <ellipse cx="455" cy="554" rx="330" ry="58" fill="#e7c6a5" opacity=".45"/>
+  <path d="M187 383c0-104 95-188 263-188s263 84 263 188c0 96-79 164-263 164s-263-68-263-164Z" fill="#f6d7b8"/>
+  <path d="M245 384c0-69 74-125 205-125s205 56 205 125c0 63-62 107-205 107s-205-44-205-107Z" fill="#fffdfb"/>
+  <path d="M302 384c0-37 53-68 148-68s148 31 148 68c0 35-42 61-148 61s-148-26-148-61Z" fill="#d96b75"/>
+  <path d="M348 384c0-15 37-28 102-28s102 13 102 28-29 27-102 27-102-12-102-27Z" fill="#fffdfb"/>
+  <path d="M225 220c64-32 132-49 225-49 102 0 180 23 237 60" fill="none" stroke="#fffdfb" stroke-width="30" stroke-linecap="round"/>
+  <g fill="#d96b75">
+    <path d="M332 155c22-27 67-7 60 28-6 32-51 48-72 18-10-15-1-33 12-46Z"/>
+    <path d="M535 145c25-19 62 5 49 37-12 29-58 35-72 4-6-14 8-31 23-41Z"/>
+    <path d="M447 128c24-23 67 0 56 34-10 32-58 40-76 9-8-15 5-32 20-43Z"/>
+  </g>
+  <g fill="#5e7d61">
+    <path d="M363 139c20-24 47-21 58 6-29 6-45 4-58-6Z"/>
+    <path d="M559 131c22-15 44-9 50 17-26 0-39-4-50-17Z"/>
+    <path d="M477 114c18-17 41-13 48 10-23 2-36-1-48-10Z"/>
+  </g>
+  <g fill="#9e1b32" opacity=".12">
+    <circle cx="163" cy="158" r="24"/>
+    <circle cx="756" cy="165" r="18"/>
+    <circle cx="710" cy="504" r="28"/>
+    <circle cx="206" cy="515" r="16"/>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | La Chola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="site-header" data-header>
+        <a class="brand logo-brand" href="index.html" aria-label="La Chola inicio">
+            <span class="logo-script">La Chola</span>
+            <span class="logo-subtitle">Pasteleria Artesanal</span>
+        </a>
+        <button class="nav-toggle icon-button" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+        <nav class="main-nav" data-nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <a class="cart-link" href="carrito.html" aria-label="Ver carrito"><span class="cart-icon" aria-hidden="true">Cart</span><span class="cart-count" data-cart-count>0</span></a>
+    </header>
+
+    <main class="cart-page section-pad">
+        <section class="cart-heading reveal">
+            <p class="script-kicker">Tu pedido</p>
+            <h1>Carrito</h1>
+            <p>Revisa cantidades, subtotal y total antes de enviar tu pedido por WhatsApp.</p>
+        </section>
+        <section class="cart-layout">
+            <div class="cart-items" data-cart-items></div>
+            <aside class="cart-summary" data-cart-summary></aside>
+        </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Navegacion movil">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Sabores</a>
+        <a href="carrito.html">Carrito <span data-cart-count>0</span></a>
+    </nav>
+
+    <script src="js/app.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

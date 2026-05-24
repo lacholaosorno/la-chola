@@ -1,0 +1,207 @@
+@media (max-width: 900px) {
+    .section-pad {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .site-header {
+        grid-template-columns: 1fr auto auto;
+        top: 12px;
+        width: calc(100% - 24px);
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .logo-script { font-size: 2.35rem; }
+    .logo-subtitle { font-size: 0.54rem; }
+
+    .nav-toggle {
+        display: block;
+        justify-self: end;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 88px;
+        right: 12px;
+        left: 12px;
+        display: grid;
+        gap: 4px;
+        padding: 18px;
+        border-radius: var(--radius-card);
+        background: rgba(255, 249, 238, 0.96);
+        box-shadow: var(--shadow-hover);
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .main-nav.open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .hero,
+    .about-section,
+    .detail-page,
+    .cart-layout,
+    .catalog-tools {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        gap: 26px;
+        padding-top: 132px;
+        min-height: auto;
+    }
+
+    .hero-art {
+        min-height: 360px;
+        border-radius: 22px;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .hero-art img {
+        min-height: 380px;
+    }
+
+    .product-slider,
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-icons {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-card {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .footer-cta,
+    .footer-contact {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-track {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-media,
+    .cart-summary {
+        position: static;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding-bottom: 74px;
+    }
+
+    h1 {
+        font-size: clamp(2.7rem, 15vw, 4.6rem);
+    }
+
+    .site-header {
+        gap: 10px;
+    }
+
+    .image-logo img {
+        width: 126px;
+    }
+
+    .cart-link,
+    .nav-toggle {
+        width: 44px;
+        min-width: 44px;
+        height: 44px;
+    }
+
+    .hero-actions,
+    .section-heading {
+        display: grid;
+        align-items: start;
+    }
+
+    .product-slider {
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+    }
+
+    .product-slider .product-card {
+        min-width: 82vw;
+        scroll-snap-align: start;
+    }
+
+    .product-grid,
+    .size-options {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .testimonial img {
+        margin: 0 auto;
+    }
+
+    .cart-item {
+        grid-template-columns: 86px 1fr;
+    }
+
+    .cart-item img {
+        width: 86px;
+        height: 86px;
+    }
+
+    .cart-actions {
+        grid-column: 1 / -1;
+        justify-content: space-between;
+    }
+
+    .site-footer {
+        grid-template-columns: 1fr;
+        padding-bottom: 104px;
+    }
+
+    .botanical,
+    .berry-deco {
+        opacity: 0.28;
+    }
+
+    .bottom-nav {
+        position: fixed;
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        z-index: 60;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        padding: 8px;
+        border: 1px solid rgba(15, 107, 69, 0.14);
+        border-radius: var(--radius-card);
+        background: rgba(255, 249, 238, 0.94);
+        box-shadow: var(--shadow-hover);
+        backdrop-filter: blur(16px);
+    }
+
+    .bottom-nav a {
+        display: grid;
+        min-height: 48px;
+        place-items: center;
+        border-radius: var(--radius-small);
+        color: var(--primary);
+        font-size: 0.84rem;
+        font-weight: 800;
+    }
+}
