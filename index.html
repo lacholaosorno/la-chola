@@ -1,287 +1,158 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="La Chola: pasteleria artesanal con alma del sur, tradicion alemana e ingredientes del sur de Chile.">
-    <title>La Chola | Pasteleria Artesanal</title>
-    <!-- Google Fonts + Font Awesome -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Archivos CSS existentes (no los modifico) -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    
-    <!-- Mejoras visuales adicionales (sin romper nada) -->
-    <style>
-        /* ===== MEJORAS VISUALES GLOBALES ===== */
-        :root {
-            --color-oro: #f4a261;
-            --color-oscuro: #1e1e1e;
-            --color-texto: #e6e6e6;
-        }
-        body {
-            background: #0f0f0f;
-            color: var(--color-texto);
-        }
-        /* Precios más grandes y destacados */
-        .product-price {
-            font-size: 2rem !important;
-            font-weight: bold;
-            color: var(--color-oro) !important;
-            text-align: center;
-            margin: 1rem 0;
-            letter-spacing: -0.5px;
-        }
-        /* Tarjetas de producto (si se generan dinámicamente) */
-        .product-card, .producto, .product-item {
-            background: rgba(255,255,255,0.05);
-            border-radius: 24px;
-            padding: 1.5rem;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-            backdrop-filter: blur(2px);
-        }
-        .product-card:hover, .producto:hover, .product-item:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.6);
-        }
-        /* Botones mejorados */
-        .btn-primary, .btn {
-            background: linear-gradient(135deg, var(--color-oro) 0%, #e76f51 100%);
-            border: none;
-            color: #1a1a1a !important;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            padding: 12px 28px;
-            border-radius: 40px;
-            transition: all 0.3s;
-        }
-        .btn-primary:hover, .btn:hover {
-            transform: scale(1.03);
-            background: linear-gradient(135deg, #e76f51 0%, var(--color-oro) 100%);
-            box-shadow: 0 5px 15px rgba(244,162,97,0.3);
-            color: #fff !important;
-        }
-        /* Testimonios mejorados */
-        .testimonial {
-            background: rgba(255,255,255,0.07);
-            border-left: 4px solid var(--color-oro);
-            border-radius: 20px;
-            padding: 2rem;
-            margin: 1.5rem auto;
-            transition: transform 0.2s;
-        }
-        .testimonial:hover {
-            transform: translateY(-3px);
-        }
-        .testimonial p.stars {
-            color: var(--color-oro);
-            font-size: 1.2rem;
-            letter-spacing: 2px;
-        }
-        .testimonial strong {
-            display: block;
-            margin-top: 1rem;
-            color: var(--color-oro);
-            font-weight: 600;
-        }
-        /* Iconos de la sección "Quiénes somos" */
-        .about-icons span i {
-            margin-right: 8px;
-            color: var(--color-oro);
-            width: 28px;
-            font-size: 1.4rem;
-        }
-        .about-icons span {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255,255,255,0.05);
-            padding: 8px 16px;
-            border-radius: 40px;
-            margin: 0 8px 8px 0;
-        }
-        /* Redes sociales en footer */
-        .social-links a {
-            background: var(--color-oro);
-            color: #1a1a1a !important;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
-        }
-        .social-links a:hover {
-            background: #e76f51;
-            transform: translateY(-3px);
-            color: white !important;
-        }
-        /* Navegación móvil mejorada */
-        .bottom-nav a {
-            color: var(--color-texto);
-            background: rgba(0,0,0,0.7);
-            border-radius: 40px;
-            padding: 8px 20px;
-        }
-        /* Ajustes de espaciado general */
-        .section-pad {
-            padding: 4rem 1.5rem;
-        }
-        h1, h2, h3 {
-            font-weight: 700;
-            letter-spacing: -0.3px;
-        }
-    </style>
-</head>
-<body>
-    <header class="site-header" data-header>
-        <a class="brand logo-brand image-logo" href="index.html" aria-label="La Chola inicio">
-            <img src="assets/img/logo/la-chola-red.png" alt="La Chola Pasteleria Artesanal">
-        </a>
-        <button class="nav-toggle icon-button" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
-            <span></span><span></span><span></span>
-        </button>
-        <nav class="main-nav" data-nav>
-            <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
-            <a href="productos.html"><i class="fas fa-cake-candles"></i> Productos</a>
-            <a href="nosotros.html"><i class="fas fa-heart"></i> Nosotros</a>
-            <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
-        </nav>
-        <a class="cart-link" href="carrito.html" aria-label="Ver carrito">
-            <span class="cart-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="9" cy="21" r="1"></circle>
-                    <circle cx="20" cy="21" r="1"></circle>
-                    <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L22 6H6"></path>
-                </svg>
-            </span>
-            <span class="cart-count" data-cart-count>0</span>
-        </a>
-    </header>
+<style>
+    /* ===== ESTILO ARTESANAL CLARO (basado en tu imagen) ===== */
+    :root {
+        --color-fondo: #fff9f2;
+        --color-texto: #4a3b2c;
+        --color-acento: #c49a6c;  /* Terracota cálido */
+        --color-acento-oscuro: #a87b4f;
+        --color-tarjeta: #ffffff;
+        --color-borde-suave: #f0e5d8;
+    }
 
-    <main>
-        <section class="hero section-pad">
-            <div class="botanical botanical-left" aria-hidden="true"></div>
-            <div class="botanical botanical-right" aria-hidden="true"></div>
-            <div class="hero-copy reveal">
-                <p class="artisan-badge">Sabor 100% artesanal</p>
-                <h1>Pasteleria <span>Artesanal</span></h1>
-                <p class="script-kicker">con alma del sur</p>
-                <p class="hero-text">Tradicion alemana, ingredientes del sur de Chile y mucho amor en cada preparacion.</p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="productos.html">Ver productos</a>
-                </div>
-            </div>
-            <div class="hero-art reveal">
-                <img src="assets/img/home/hero-table.png" alt="Kuchen artesanal con frutos rojos junto a una ventana">
-            </div>
-            <a class="scroll-cue" href="#productos" aria-label="Ir a productos">
-                <span></span>
-                Desliza
-            </a>
-        </section>
+    body {
+        background: var(--color-fondo);
+        color: var(--color-texto);
+        font-family: 'Poppins', 'Cormorant Garamond', serif;
+    }
 
-        <section class="section-pad featured-section" id="productos">
-            <img class="berry-deco berry-left" src="assets/img/home/berries-left.png" alt="" aria-hidden="true">
-            <img class="berry-deco berry-right" src="assets/img/home/berries-right.png" alt="" aria-hidden="true">
-            <div class="section-heading reveal">
-                <h2>Nuestros Productos</h2>
-                <p class="script-kicker">Hechos con amor, para momentos unicos</p>
-            </div>
-            <div class="product-slider" data-featured-products></div>
-            <div class="center-action">
-                <a class="btn btn-primary" href="productos.html">Ver todos los productos</a>
-            </div>
-        </section>
+    /* Header y navegación */
+    .site-header {
+        background: white;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    }
+    .main-nav a {
+        color: var(--color-texto);
+        font-weight: 500;
+    }
+    .main-nav a:hover {
+        color: var(--color-acento);
+    }
 
-        <section class="section-pad about-section" id="nosotros">
-            <div class="about-image reveal">
-                <img src="assets/img/home/casa-alemana-photo.png" alt="Casa estilo aleman rodeada de flores">
-            </div>
-            <div class="about-copy reveal">
-                <p class="eyebrow">¿Quienes somos?</p>
-                <h2>Pasteleria artesanal con alma del sur</h2>
-                <p>Somos una pasteleria artesanal con alma del sur de Chile. Inspirados en la tradicion alemana y en los sabores de nuestra tierra, creamos cada producto con ingredientes naturales, recetas caseras y mucho amor.</p>
-                <div class="about-icons">
-                    <span><i class="fas fa-leaf"></i> Ingredientes naturales</span>
-                    <span><i class="fas fa-heart"></i> Hecho con amor</span>
-                    <span><i class="fas fa-mug-hot"></i> Tradicion alemana</span>
-                </div>
-            </div>
-        </section>
+    /* Hero (portada) */
+    .hero {
+        background: linear-gradient(135deg, #fff5e8 0%, #fff9f2 100%);
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+    .hero h1 {
+        font-size: 3.5rem;
+        color: #5e3a2b;
+    }
+    .hero h1 span {
+        color: var(--color-acento);
+    }
+    .artisan-badge {
+        background: var(--color-acento);
+        color: white;
+        display: inline-block;
+        padding: 0.3rem 1.2rem;
+        border-radius: 40px;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
 
-        <section class="section-pad testimonials" id="testimonios">
-            <div class="section-heading reveal">
-                <h2>Lo que dicen nuestros clientes</h2>
-            </div>
-            <div class="testimonial-track" data-testimonials>
-                <article class="testimonial active">
-                    <div>
-                        <p class="stars">★★★★★</p>
-                        <p>"Los kuchen de frambuesa son simplemente espectaculares, me hacen recordar a los de mi abuela."</p>
-                        <strong>Maria Paz R.</strong>
-                    </div>
-                </article>
-                <article class="testimonial">
-                    <div>
-                        <p class="stars">★★★★★</p>
-                        <p>"Todo es delicioso y se nota el amor en cada detalle. Mis favoritos son el rollo de manjar y la selva negra."</p>
-                        <strong>Andres T.</strong>
-                    </div>
-                </article>
-                <article class="testimonial">
-                    <div>
-                        <p class="stars">★★★★★</p>
-                        <p>"Encargue para un cumpleanos y fue todo un exito. Productos frescos y hermosos."</p>
-                        <strong>Carolina V.</strong>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
+    /* Productos - tarjetas estilo imagen */
+    .product-slider .product-card, 
+    .producto-item,
+    .product-card {
+        background: var(--color-tarjeta);
+        border-radius: 24px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        padding: 1.5rem;
+        transition: transform 0.25s, box-shadow 0.25s;
+        border: 1px solid var(--color-borde-suave);
+    }
+    .product-slider .product-card:hover,
+    .producto-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    .product-price {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--color-acento);
+        text-align: center;
+        margin: 1rem 0;
+    }
 
-    <footer class="site-footer" id="contacto">
-        <div class="footer-card">
-            <div class="footer-cta">
-                <div>
-                    <h2>¡Hablemos!</h2>
-                    <p>Haz tu pedido o contactanos para consultas y encargos especiales.</p>
-                    <a class="btn btn-primary footer-whatsapp" href="https://wa.me/56912345678" target="_blank" rel="noopener">Contactanos</a>
-                </div>
-                <div class="footer-contact">
-                    <p><i class="fas fa-phone-alt"></i> +56 9 1234 5678</p>
-                    <p><i class="fas fa-envelope"></i> hola@lachola.cl</p>
-                    <p><i class="fas fa-calendar-alt"></i> Martes a Domingo</p>
-                    <p><i class="fas fa-clock"></i> 10:00 - 19:00 hrs.</p>
-                </div>
-            </div>
-            <div class="footer-social">
-                <p>SIGUENOS EN</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    /* Botones redondeados */
+    .btn, .btn-primary {
+        background: var(--color-acento);
+        border: none;
+        color: white !important;
+        padding: 12px 28px;
+        border-radius: 40px;
+        font-weight: 600;
+        transition: 0.2s;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+    .btn:hover, .btn-primary:hover {
+        background: var(--color-acento-oscuro);
+        transform: translateY(-2px);
+        color: white !important;
+    }
 
-    <nav class="bottom-nav" aria-label="Navegacion movil">
-        <a href="index.html">Inicio</a>
-        <a href="productos.html">Sabores</a>
-        <a href="carrito.html">Carrito <span data-cart-count>0</span></a>
-    </nav>
+    /* Sección "Quiénes somos" */
+    .about-section {
+        background: white;
+        border-radius: 40px;
+        margin: 2rem;
+        padding: 2rem;
+    }
+    .about-icons span {
+        background: #f9f0e6;
+        padding: 8px 20px;
+        border-radius: 40px;
+        margin-right: 10px;
+    }
+    .about-icons i {
+        color: var(--color-acento);
+        margin-right: 8px;
+    }
 
-    <script src="js/app.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/productos.js"></script>
-</body>
-</html>
+    /* Testimonios */
+    .testimonial {
+        background: white;
+        border-left: 5px solid var(--color-acento);
+        border-radius: 20px;
+        padding: 1.8rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+    .testimonial .stars {
+        color: #f4b942;
+        font-size: 1.2rem;
+    }
+
+    /* Footer */
+    .site-footer {
+        background: #2c3e2f;
+        color: white;
+        border-radius: 40px 40px 0 0;
+        margin-top: 3rem;
+    }
+    .footer-whatsapp {
+        background: #25d366 !important;
+    }
+    .social-links a {
+        background: rgba(255,255,255,0.2);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+    }
+    .social-links a:hover {
+        background: var(--color-acento);
+        transform: translateY(-3px);
+    }
+
+    /* Ajustes responsivos */
+    @media (max-width: 768px) {
+        .hero h1 { font-size: 2.2rem; }
+        .product-price { font-size: 1.4rem; }
+        .about-section { margin: 1rem; }
+    }
+</style>
